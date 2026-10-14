@@ -1,6 +1,6 @@
 # VITB COMPANY
 
-Industrial montage company website — graphite & safety orange.
+Multi-direction group website (montage, trade, food, café, accommodation, car rental).
 
 ## Live site
 
@@ -21,6 +21,6 @@ Then visit http://localhost:8080
 ## Pages
 
 - Home — `index.html`
-- Services — `services.html`
+- Directions — `services.html`
 - About — `about.html`
 - Contact — `contact.html`
