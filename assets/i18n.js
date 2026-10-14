@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = 'estateliga-lang';
+  const STORAGE_KEY = 'vborganisation-lang';
   const DEFAULT = 'en';
 
   const dict = {
@@ -181,7 +181,7 @@
       btn.setAttribute('aria-pressed', btn.dataset.lang === lang ? 'true' : 'false');
     });
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) {}
-    window.__estateligaApply = apply;
+    window.__vborgApply = apply;
   }
 
   function init() {
@@ -190,7 +190,7 @@
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved && dict[saved]) lang = saved;
     } catch (_) {}
-    window.__estateligaApply = apply;
+    window.__vborgApply = apply;
     apply(lang);
     bustLinks();
     document.addEventListener('click', (e) => {

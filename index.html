@@ -179,8 +179,8 @@
   window.__setLang = function (lang) {
     try {
       // Prefer full i18n module if loaded
-      if (window.__estateligaApply) { window.__estateligaApply(lang); return false; }
-      localStorage.setItem('estateliga-lang', lang);
+      if (window.__vborgApply) { window.__vborgApply(lang); return false; }
+      localStorage.setItem('vborganisation-lang', lang);
       location.reload();
     } catch (e) { location.reload(); }
     return false;

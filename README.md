@@ -4,7 +4,7 @@ Luxury real estate website — black & metallic gold.
 
 ## Live site
 
-GitHub Pages: https://g7jdfn7dhj-creator.github.io/estateliga/
+GitHub Pages: https://g7jdfn7dhj-creator.github.io/vborganisation/
 
 (Custom domain can be added later.)
 
