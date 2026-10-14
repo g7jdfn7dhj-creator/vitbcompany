@@ -3,259 +3,58 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VITB COMPANY — Contact</title>
-<link rel="stylesheet" href="styles.css" />
-<style>
-  .content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 80px 10px;
-  }
-  .layout {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 64px;
-    width: 100%;
-    max-width: 1280px;
-    margin-top: 36px;
-    align-items: start;
-  }
-  .form {
-    border: 1px solid rgba(201,162,39,0.4);
-    padding: 40px 44px;
-    background: linear-gradient(180deg, rgba(18,16,12,0.85), rgba(8,8,8,0.95));
-    box-shadow: inset 0 0 50px rgba(201,162,39,0.04);
-  }
-  .field {
-    margin-bottom: 26px;
-  }
-  .field label {
-    display: block;
-    font-size: 11px;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 10px;
-  }
-  .field input,
-  .field textarea {
-    width: 100%;
-    background: rgba(0,0,0,0.45);
-    border: 1px solid rgba(201,162,39,0.45);
-    color: var(--text);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.06em;
-    padding: 14px 16px;
-    outline: none;
-  }
-  .field textarea {
-    min-height: 140px;
-    resize: none;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-  }
-  .submit {
-    margin-top: 8px;
-    width: 100%;
-    border: none;
-    padding: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #e8d48b 0%, #c9a227 40%, #8a6d1f 100%);
-    color: #1a1408;
-    cursor: default;
-    box-shadow: 0 0 28px rgba(201,162,39,0.22);
-  }
-  .details {
-    padding-top: 12px;
-  }
-  .details h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 22px;
-    letter-spacing: 0.24em;
-    color: var(--gold-light);
-    margin-bottom: 28px;
-  }
-  .detail-item {
-    padding: 22px 0;
-    border-bottom: 1px solid rgba(201,162,39,0.28);
-  }
-  .detail-item:first-of-type {
-    border-top: 1px solid rgba(201,162,39,0.28);
-  }
-  .detail-item .label {
-    font-size: 11px;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: rgba(201,162,39,0.65);
-    margin-bottom: 8px;
-  }
-  .detail-item .value {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    color: var(--text);
-  }
-  .note {
-    margin-top: 36px;
-    font-size: 12px;
-    letter-spacing: 0.16em;
-    color: var(--text-muted);
-    line-height: 1.7;
-  }
-
-  .form {
-    animation: riseSoft 2.4s 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-  }
-  .details {
-    animation: riseSoft 2.4s 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
-  }
-  .field {
-    animation: fadeInUp 2s both;
-  }
-  .field:nth-child(1) { animation-delay: 0.7s; }
-  .field:nth-child(2) { animation-delay: 0.95s; }
-  .field:nth-child(3) { animation-delay: 1.2s; }
-  input, textarea {
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  input:focus, textarea:focus {
-    border-color: #e8d48b !important;
-    box-shadow: 0 0 18px rgba(201,162,39,0.25);
-    outline: none;
-  }
-  .submit {
-    background-size: 200% 100%;
-    background-image: linear-gradient(110deg, #e8d48b 0%, #c9a227 35%, #f5e7a8 50%, #c9a227 65%, #8a6d1f 100%);
-    animation: shimmer 7s linear infinite, fadeInUp 2.2s 1.4s both;
-  }
-  .detail-item {
-    animation: fadeInUp 2s both;
-  }
-  .detail-item:nth-child(1) { animation-delay: 1.0s; }
-  .detail-item:nth-child(2) { animation-delay: 1.3s; }
-  .detail-item:nth-child(3) { animation-delay: 1.6s; }
-  /* responsive */
-  @media (max-width: 1000px) {
-    .content { padding: 0 40px 16px; }
-    .layout {
-      grid-template-columns: 1fr;
-      gap: 28px;
-      margin-top: 24px;
-    }
-    .form { padding: 28px 24px; }
-  }
-  @media (max-width: 600px) {
-    .content { padding: 0 16px 16px; }
-    .form { padding: 22px 16px; }
-    .details h2 { font-size: 18px; }
-    .detail-item .value { font-size: 18px; }
-  }
-</style>
+<title>VitB Company — Contact</title>
+<meta name="description" content="VitB Company — industrial montage in Romania: equipment installation, steel structures, pipelines, production lines, dismantling, relocation and maintenance." />
+<link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
 <div class="page">
-  <div class="bg-motion" aria-hidden="true">
-    <div class="bg-motion__glow"></div>
-    <div class="bg-motion__grain"></div>
-  </div>
-
-    <header class="header">
-    <div class="brand">
-      <img class="brand-logo" src="assets/logo-vitb.png" alt="VitB Company logo" />
-      <span class="brand-text">VITB COMPANY</span>
-    </div>
-    <div class="header-right">
-    <div class="lang-switch" role="group" aria-label="Language">
-      <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English" aria-pressed="true" onclick="return window.__setLang && window.__setLang('en')">
-        <img src="assets/flags/en.svg" alt="" width="22" height="15" />
-        <span>EN</span>
-      </button>
-      <button type="button" class="lang-btn" data-lang="ro" title="Română" aria-label="Română" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ro')">
-        <img src="assets/flags/ro.svg" alt="" width="22" height="15" />
-        <span>RO</span>
-      </button>
-      <button type="button" class="lang-btn" data-lang="de" title="Deutsch" aria-label="Deutsch" aria-pressed="false" onclick="return window.__setLang && window.__setLang('de')">
-        <img src="assets/flags/de.svg" alt="" width="22" height="15" />
-        <span>DE</span>
-      </button>
-      <button type="button" class="lang-btn" data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ru')">
-        <img src="assets/flags/ru.svg" alt="" width="22" height="15" />
-        <span>RU</span>
-      </button>
-    </div>
-    <nav>
-      <ul class="nav">
-                <li><a href="index.html?v=6"><span data-i18n="nav_home">Home</span></a></li>
-        <li><a href="properties.html?v=6"><span data-i18n="nav_properties">Listings</span></a></li>
-        <li><a href="about.html?v=6"><span data-i18n="nav_about">About</span></a></li>
-        <li><a class="active" href="contact.html?v=6"><span data-i18n="nav_contact">Contact</span></a></li>
-      </ul>
-    </nav>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <header class="header">
+    <div class="hazard"></div>
+    <div class="header-in">
+      <a class="brand" href="index.html?v=7" aria-label="VitB Company"><svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="#2f343a" stroke="#ff6a1a" stroke-width="2.5"/><circle cx="20" cy="20" r="7" fill="#16181b" stroke="#e6e8ea" stroke-width="2.5"/></svg><span>VIT<b>B</b> COMPANY</span></a>
+      <div class="header-right">
+        <div class="lang-switch" role="group" aria-label="Language"><button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English" aria-pressed="true" onclick="return window.__setLang && window.__setLang('en')"><img src="assets/flags/en.svg" alt="EN" /></button><button type="button" class="lang-btn" data-lang="ro" title="Română" aria-label="Română" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ro')"><img src="assets/flags/ro.svg" alt="RO" /></button><button type="button" class="lang-btn" data-lang="de" title="Deutsch" aria-label="Deutsch" aria-pressed="false" onclick="return window.__setLang && window.__setLang('de')"><img src="assets/flags/de.svg" alt="DE" /></button><button type="button" class="lang-btn" data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ru')"><img src="assets/flags/ru.svg" alt="RU" /></button></div>
+        <nav class="nav"><ul><li><a href="index.html?v=7"><span data-i18n="nav_home">Home</span></a></li><li><a href="services.html?v=7"><span data-i18n="nav_services">Services</span></a></li><li><a href="about.html?v=7"><span data-i18n="nav_about">About</span></a></li><li><a class="active" href="contact.html?v=7"><span data-i18n="nav_contact">Contact</span></a></li></ul></nav>
+      </div>
     </div>
   </header>
-
-  <main class="main content">
-    <h1 class="page-title" data-i18n="page_contact">CONTACT</h1>
-    <div class="gold-line"></div>
-    <div class="layout">
-      <form class="form" onsubmit="return false;">
-        <div class="field">
-          <label data-i18n="form_name">Name</label>
-          <input type="text" name="name" autocomplete="name" value="" />
-        </div>
-        <div class="field">
-          <label data-i18n="form_email">Email</label>
-          <input type="email" name="email" autocomplete="email" value="" />
-        </div>
-        <div class="field">
-          <label data-i18n="form_message">Message</label>
-          <textarea name="message"></textarea>
-        </div>
-        <button class="submit" type="button" data-i18n="form_submit">Send message</button>
+  <main class="main">
+    <div class="eyebrow fade">VitB Company</div>
+    <h1 class="page-title fade d1" data-i18n="page_contact">CONTACT</h1>
+    <p class="lead fade d2" data-i18n="contact_intro">Tell us about your project and we will get back to you.</p>
+    <div class="contact-grid">
+      <form class="form fade d3" onsubmit="return false;">
+        <div class="field"><label for="f-name" data-i18n="form_name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" /></div>
+        <div class="field"><label for="f-company" data-i18n="form_company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization" /></div>
+        <div class="field"><label for="f-phone" data-i18n="form_phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" /></div>
+        <div class="field"><label for="f-email" data-i18n="form_email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" /></div>
+        <div class="field full"><label for="f-service" data-i18n="form_service">Service type</label><select id="f-service" name="service"><option value="" data-i18n="form_choose">Select a service</option><option value="s1" data-i18n="s1_t">Equipment installation</option><option value="s2" data-i18n="s2_t">Steel structures</option><option value="s3" data-i18n="s3_t">Pipelines</option><option value="s4" data-i18n="s4_t">Production lines</option><option value="s5" data-i18n="s5_t">Dismantling & relocation</option><option value="s6" data-i18n="s6_t">Maintenance</option><option value="other" data-i18n="form_other">Other</option></select></div>
+        <div class="field full"><label for="f-desc" data-i18n="form_desc">Project description</label><textarea id="f-desc" name="description"></textarea></div>
+        <button class="btn btn-solid" type="submit" data-i18n="form_submit">Send request</button>
       </form>
-      <aside class="details">
-        <h2 data-i18n="atelier">OFFICE</h2>
-        <div class="detail-item">
-          <div class="label" data-i18n="label_correspondence">Correspondence</div>
-          <div class="value">—</div>
-        </div>
-        <div class="detail-item">
-          <div class="label" data-i18n="label_telephone">Telephone</div>
-          <div class="value">—</div>
-        </div>
-        <div class="detail-item">
-          <div class="label" data-i18n="label_salon">Area</div>
-          <div class="value" data-i18n="value_salon">Constanța · Mamaia</div>
-        </div>
-        <p class="note" data-i18n="contact_note">Tell us what you need — buy, sell, or rent. We usually reply within one to two business days.</p>
+      <aside class="info fade d4">
+        <div class="hazard"></div>
+        <div class="row"><span data-i18n="label_email">Email</span><strong>—</strong></div>
+        <div class="row"><span data-i18n="label_phone">Phone</span><strong>—</strong></div>
+        <div class="row"><span data-i18n="label_location">Location</span><strong data-i18n="value_location">Romania</strong></div>
+        <p data-i18n="contact_note">Include the type of work, the site location and the desired timeframe.</p>
       </aside>
     </div>
   </main>
-
-    <footer class="footer">
-    <span>© VitB Company</span>
-    <span data-i18n="footer_contact">Constanța · Mamaia ◆ Romania</span>
-    <span>Romania</span>
-  </footer>
+  <footer class="footer"><div class="footer-in"><span>© VitB Company</span><span data-i18n="footer_tag">Industrial montage ◆ Romania</span><span>Romania</span></div></footer>
 </div>
-  <script>
+<script>
   window.__setLang = function (lang) {
     try {
-      // Prefer full i18n module if loaded
       if (window.__vitbApply) { window.__vitbApply(lang); return false; }
       localStorage.setItem('vitbcompany-lang', lang);
       location.reload();
     } catch (e) { location.reload(); }
     return false;
   };
-  </script>
-  <script src="assets/i18n.js?v=6" defer></script>
+</script>
+<script src="assets/i18n.js?v=7" defer></script>
 </body>
 </html>

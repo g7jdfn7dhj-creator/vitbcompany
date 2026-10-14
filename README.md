@@ -1,6 +1,6 @@
 # VITB COMPANY
 
-Luxury real estate website — black & metallic gold.
+Industrial montage company website — graphite & safety orange.
 
 ## Live site
 
@@ -21,6 +21,6 @@ Then visit http://localhost:8080
 ## Pages
 
 - Home — `index.html`
-- Properties — `properties.html`
+- Services — `services.html`
 - About — `about.html`
 - Contact — `contact.html`

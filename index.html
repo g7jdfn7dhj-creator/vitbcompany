@@ -3,189 +3,58 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VITB COMPANY — Home</title>
-<link rel="stylesheet" href="styles.css" />
-<style>
-
-  .hero {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px clamp(16px, 5vw, 80px) 20px;
-    position: relative;
-  }
-  .watermark {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-    opacity: 0.07;
-    z-index: 0;
-    animation: watermarkBreathe 11s ease-in-out infinite;
-  }
-  .watermark img {
-    width: 520px;
-    height: auto;
-    filter: brightness(1.2) sepia(0.4);
-  }
-  .hero-inner { position: relative; z-index: 1; }
-  .eyebrow {
-    font-size: 12px;
-    letter-spacing: 0.45em;
-    text-transform: uppercase;
-    color: var(--gold-muted);
-    margin-bottom: 28px;
-    animation: fadeIn 2.2s 0.35s both;
-  }
-  .hero h1 {
-    font-family: 'Cinzel', serif;
-    font-weight: 600;
-    font-size: clamp(28px, 5.6vw, 84px);
-    letter-spacing: 0.14em;
-    line-height: 1.05;
-    background: linear-gradient(180deg, #f8efc0 0%, #e8d48b 25%, #c9a227 55%, #8a6d1f 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 80px rgba(201,162,39,0.15);
-    margin-bottom: 8px;
-    animation: riseSoft 2.6s 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
-  }
-  .glow {
-    position: absolute;
-    width: 700px;
-    height: 280px;
-    left: 50%;
-    top: 42%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(ellipse, rgba(201,162,39,0.18) 0%, transparent 70%);
-    filter: blur(40px);
-    z-index: 0;
-    pointer-events: none;
-    animation: glowPulse 9s ease-in-out infinite;
-  }
-  .tagline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    font-weight: 400;
-    color: var(--text-muted);
-    letter-spacing: 0.12em;
-    max-width: 720px;
-    margin: 8px auto 0;
-    line-height: 1.5;
-    animation: fadeInUp 2.4s 0.9s both;
-  }
-  .cta-row {
-    display: flex;
-    gap: 24px;
-    margin-top: 48px;
-    justify-content: center;
-  }
-  .sub-label {
-    margin-top: 56px;
-    font-size: 11px;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: rgba(201,162,39,0.45);
-    animation: fadeIn 2.2s 1.8s both;
-  }
-  /* responsive */
-  @media (max-width: 900px) {
-    .hero { padding: 24px 24px 16px; }
-    .hero h1 { font-size: 38px !important; letter-spacing: 0.08em !important; }
-    .eyebrow { font-size: 10px; letter-spacing: 0.28em; margin-bottom: 18px; }
-    .tagline { font-size: 18px; letter-spacing: 0.06em; max-width: 92%; }
-    .cta-row { flex-direction: column; align-items: center; gap: 14px; margin-top: 32px; }
-    .watermark img { width: min(320px, 70vw); }
-    .sub-label { margin-top: 36px; font-size: 10px; }
-  }
-  @media (max-width: 600px) {
-    .hero h1 { font-size: 26px !important; letter-spacing: 0.05em !important; }
-    .tagline { font-size: 16px; }
-  }
-
-</style>
+<title>VitB Company — Industrial Montage</title>
+<meta name="description" content="VitB Company — industrial montage in Romania: equipment installation, steel structures, pipelines, production lines, dismantling, relocation and maintenance." />
+<link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
 <div class="page">
-  <div class="bg-motion" aria-hidden="true">
-    <div class="bg-motion__glow"></div>
-    <div class="bg-motion__grain"></div>
-  </div>
-
+  <div class="grid-bg" aria-hidden="true"></div>
   <header class="header">
-    <div class="brand">
-      <img class="brand-logo" src="assets/logo-vitb.png" alt="VitB Company logo" />
-      <span class="brand-text">VITB COMPANY</span>
-    </div>
-    <div class="header-right">
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English" aria-pressed="true" onclick="return window.__setLang && window.__setLang('en')">
-          <img src="assets/flags/en.svg" alt="" width="22" height="15" />
-          <span>EN</span>
-        </button>
-        <button type="button" class="lang-btn" data-lang="ro" title="Română" aria-label="Română" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ro')">
-          <img src="assets/flags/ro.svg" alt="" width="22" height="15" />
-          <span>RO</span>
-        </button>
-        <button type="button" class="lang-btn" data-lang="de" title="Deutsch" aria-label="Deutsch" aria-pressed="false" onclick="return window.__setLang && window.__setLang('de')">
-          <img src="assets/flags/de.svg" alt="" width="22" height="15" />
-          <span>DE</span>
-        </button>
-        <button type="button" class="lang-btn" data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ru')">
-          <img src="assets/flags/ru.svg" alt="" width="22" height="15" />
-          <span>RU</span>
-        </button>
+    <div class="hazard"></div>
+    <div class="header-in">
+      <a class="brand" href="index.html?v=7" aria-label="VitB Company"><svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="#2f343a" stroke="#ff6a1a" stroke-width="2.5"/><circle cx="20" cy="20" r="7" fill="#16181b" stroke="#e6e8ea" stroke-width="2.5"/></svg><span>VIT<b>B</b> COMPANY</span></a>
+      <div class="header-right">
+        <div class="lang-switch" role="group" aria-label="Language"><button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English" aria-pressed="true" onclick="return window.__setLang && window.__setLang('en')"><img src="assets/flags/en.svg" alt="EN" /></button><button type="button" class="lang-btn" data-lang="ro" title="Română" aria-label="Română" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ro')"><img src="assets/flags/ro.svg" alt="RO" /></button><button type="button" class="lang-btn" data-lang="de" title="Deutsch" aria-label="Deutsch" aria-pressed="false" onclick="return window.__setLang && window.__setLang('de')"><img src="assets/flags/de.svg" alt="DE" /></button><button type="button" class="lang-btn" data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ru')"><img src="assets/flags/ru.svg" alt="RU" /></button></div>
+        <nav class="nav"><ul><li><a class="active" href="index.html?v=7"><span data-i18n="nav_home">Home</span></a></li><li><a href="services.html?v=7"><span data-i18n="nav_services">Services</span></a></li><li><a href="about.html?v=7"><span data-i18n="nav_about">About</span></a></li><li><a href="contact.html?v=7"><span data-i18n="nav_contact">Contact</span></a></li></ul></nav>
       </div>
-      <nav>
-        <ul class="nav">
-          <li><a class="active" href="index.html?v=6"><span data-i18n="nav_home">Home</span></a></li>
-          <li><a href="properties.html?v=6"><span data-i18n="nav_properties">Listings</span></a></li>
-          <li><a href="about.html?v=6"><span data-i18n="nav_about">About</span></a></li>
-          <li><a href="contact.html?v=6"><span data-i18n="nav_contact">Contact</span></a></li>
-        </ul>
-      </nav>
     </div>
   </header>
-
-  <main class="main hero">
-    <div class="glow"></div>
-    <div class="watermark"><img src="assets/logo-vitb.png" alt="" /></div>
-    <div class="hero-inner">
-      <div class="eyebrow" data-i18n="eyebrow">Constanța · Mamaia · Romania</div>
-      <h1>VITB COMPANY</h1>
-      <div class="gold-line"></div>
-      <p class="tagline" data-i18n="tagline">Homes by the Black Sea — for living, investing, and returning to the shore. We help you buy, sell, and rent in Constanța and Mamaia with clear advice and a local eye.</p>
-      <div class="cta-row">
-        <a class="btn btn-solid" href="properties.html?v=6" data-i18n="cta_view">View listings</a>
-        <a class="btn btn-outline" href="contact.html?v=6" data-i18n="cta_contact">Contact</a>
+  <main class="main">
+    <section class="hero">
+      <div>
+        <div class="eyebrow fade" data-i18n="eyebrow">Industrial montage · Romania</div>
+        <h1 class="fade d1" data-i18n="hero_title">Industrial installation &amp; assembly</h1>
+        <p class="lead fade d2" data-i18n="tagline">We install equipment, erect steel structures, lay pipelines and assemble production lines — and take care of dismantling, relocation and maintenance.</p>
+        <div class="cta-row fade d3"><a class="btn btn-solid" href="services.html?v=7" data-i18n="cta_services">Our services</a><a class="btn btn-outline" href="contact.html?v=7" data-i18n="cta_contact">Request a quote</a></div>
+        <div class="tags fade d4"><span data-i18n="hero_tag1">Safety first</span><span data-i18n="hero_tag2">Precise assembly</span><span data-i18n="hero_tag3">On schedule</span></div>
       </div>
-      <div class="sub-label" data-i18n="by_appointment">Sales & rentals</div>
-    </div>
+      <div class="hero-art fade d3"><svg viewBox="0 0 400 400" aria-hidden="true" fill="none">
+<g stroke="rgba(230,232,234,.12)"><line x1="0" y1="200" x2="400" y2="200"/><line x1="200" y1="0" x2="200" y2="400"/><circle cx="200" cy="200" r="170" stroke-dasharray="4 8"/></g>
+<g class="spin"><path d="M200 70 l14 0 6 26 20 8 22-15 20 20-15 22 8 20 26 6 0 28-26 6-8 20 15 22-20 20-22-15-20 8-6 26-28 0-6-26-20-8-22 15-20-20 15-22-8-20-26-6 0-28 26-6 8-20-15-22 20-20 22 15 20-8 6-26z" stroke="#ff6a1a" stroke-width="3"/></g>
+<polygon points="200,150 243,175 243,225 200,250 157,225 157,175" fill="#2f343a" stroke="#e6e8ea" stroke-width="3"/>
+<circle cx="200" cy="200" r="20" fill="#16181b" stroke="#ff6a1a" stroke-width="3"/>
+<g stroke="#9aa1a8" stroke-width="1.5"><path d="M40 360 h80 M40 352 v16 M120 352 v16"/><path d="M290 40 h70 v70"/></g>
+<text x="40" y="345" fill="#9aa1a8" font-family="monospace" font-size="11">M24 · 8.8</text>
+</svg></div>
+    </section>
+    <section class="section">
+      <div class="section-head"><div><div class="eyebrow" data-i18n="home_scope">Scope of work</div><h2 data-i18n="home_scope_title">What we do</h2></div><a class="link-more" href="services.html?v=7" data-i18n="more">All services →</a></div>
+      <div class="cards"><article class="card reveal"><div class="num">01</div><h3 data-i18n="s1_t">Equipment installation</h3><p data-i18n="s1_b">Positioning, levelling, anchoring and connection of industrial equipment and machinery.</p></article><article class="card reveal"><div class="num">02</div><h3 data-i18n="s2_t">Steel structures</h3><p data-i18n="s2_b">Assembly of steel frames, platforms, supports, stairs and technological structures.</p></article><article class="card reveal"><div class="num">03</div><h3 data-i18n="s3_t">Pipelines</h3><p data-i18n="s3_b">Installation of process and utility pipelines, supports and fittings.</p></article><article class="card reveal"><div class="num">04</div><h3 data-i18n="s4_t">Production lines</h3><p data-i18n="s4_b">Assembly, alignment and connection of production and conveyor lines.</p></article><article class="card reveal"><div class="num">05</div><h3 data-i18n="s5_t">Dismantling & relocation</h3><p data-i18n="s5_b">Careful dismantling, marking, transport preparation and re-assembly on a new site.</p></article><article class="card reveal"><div class="num">06</div><h3 data-i18n="s6_t">Maintenance</h3><p data-i18n="s6_b">Scheduled inspections, adjustments and repair works on installed equipment and structures.</p></article></div>
+    </section>
   </main>
-
-  <footer class="footer">
-    <span>© VitB Company</span>
-    <span data-i18n="footer_home">Sale & Rent ◆ Constanța · Mamaia</span>
-    <span>Romania</span>
-  </footer>
+  <footer class="footer"><div class="footer-in"><span>© VitB Company</span><span data-i18n="footer_tag">Industrial montage ◆ Romania</span><span>Romania</span></div></footer>
 </div>
-  <script>
+<script>
   window.__setLang = function (lang) {
     try {
-      // Prefer full i18n module if loaded
       if (window.__vitbApply) { window.__vitbApply(lang); return false; }
       localStorage.setItem('vitbcompany-lang', lang);
       location.reload();
     } catch (e) { location.reload(); }
     return false;
   };
-  </script>
-  <script src="assets/i18n.js?v=6" defer></script>
+</script>
+<script src="assets/i18n.js?v=7" defer></script>
 </body>
 </html>

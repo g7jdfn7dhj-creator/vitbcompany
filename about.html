@@ -3,183 +3,42 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VITB COMPANY — About</title>
-<link rel="stylesheet" href="styles.css" />
-<style>
-  .content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 120px 10px;
-  }
-  .crest {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid rgba(201,162,39,0.4);
-    margin: 28px 0 8px;
-    box-shadow: 0 0 60px rgba(201,162,39,0.12);
-  }
-  .blocks {
-    display: grid;
-    grid-template-columns: 1fr 1px 1fr 1px 1fr;
-    gap: 0 40px;
-    margin-top: 36px;
-    width: 100%;
-    max-width: 1480px;
-  }
-  .divider-v {
-    background: linear-gradient(180deg, transparent, rgba(201,162,39,0.45), transparent);
-    width: 1px;
-  }
-  .block {
-    text-align: center;
-    padding: 8px 12px;
-  }
-  .block h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.28em;
-    color: var(--gold-light);
-    margin-bottom: 16px;
-  }
-  .block p {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    line-height: 1.65;
-    color: #c8b896;
-  }
-  .statement {
-    margin-top: 44px;
-    max-width: 820px;
-    text-align: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
-    font-style: italic;
-    color: var(--text-muted);
-    line-height: 1.6;
-    letter-spacing: 0.04em;
-  }
-
-  .crest {
-    animation: watermarkBreathe 11s ease-in-out infinite, riseSoft 2.4s 0.4s both;
-  }
-  .blocks .block {
-    animation: riseSoft 2.2s cubic-bezier(0.16, 1, 0.3, 1) both;
-  }
-  .blocks .block:nth-of-type(1) { animation-delay: 0.9s; }
-  .blocks .block:nth-of-type(2) { animation-delay: 0.9s; }
-  .blocks .block:nth-of-type(3) { animation-delay: 1.3s; }
-  .statement {
-    animation: fadeInUp 2.4s 1.6s both;
-  }
-  /* responsive */
-  @media (max-width: 1100px) {
-    .content { padding: 0 40px 16px; }
-    .blocks {
-      grid-template-columns: 1fr;
-      gap: 28px;
-      margin-top: 28px;
-    }
-    .divider-v { display: none; }
-    .crest { width: 120px; margin: 18px auto 8px; }
-    .block h2 { font-size: 18px; }
-    .block p { font-size: 17px; }
-    .statement { font-size: 18px; padding: 0 8px; }
-  }
-  @media (max-width: 600px) {
-    .content { padding: 0 16px 16px; }
-    .crest { width: 96px; }
-    .statement { font-size: 16px; }
-  }
-</style>
+<title>VitB Company — About</title>
+<meta name="description" content="VitB Company — industrial montage in Romania: equipment installation, steel structures, pipelines, production lines, dismantling, relocation and maintenance." />
+<link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
 <div class="page">
-  <div class="bg-motion" aria-hidden="true">
-    <div class="bg-motion__glow"></div>
-    <div class="bg-motion__grain"></div>
-  </div>
-
-    <header class="header">
-    <div class="brand">
-      <img class="brand-logo" src="assets/logo-vitb.png" alt="VitB Company logo" />
-      <span class="brand-text">VITB COMPANY</span>
-    </div>
-    <div class="header-right">
-    <div class="lang-switch" role="group" aria-label="Language">
-      <button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English" aria-pressed="true" onclick="return window.__setLang && window.__setLang('en')">
-        <img src="assets/flags/en.svg" alt="" width="22" height="15" />
-        <span>EN</span>
-      </button>
-      <button type="button" class="lang-btn" data-lang="ro" title="Română" aria-label="Română" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ro')">
-        <img src="assets/flags/ro.svg" alt="" width="22" height="15" />
-        <span>RO</span>
-      </button>
-      <button type="button" class="lang-btn" data-lang="de" title="Deutsch" aria-label="Deutsch" aria-pressed="false" onclick="return window.__setLang && window.__setLang('de')">
-        <img src="assets/flags/de.svg" alt="" width="22" height="15" />
-        <span>DE</span>
-      </button>
-      <button type="button" class="lang-btn" data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ru')">
-        <img src="assets/flags/ru.svg" alt="" width="22" height="15" />
-        <span>RU</span>
-      </button>
-    </div>
-    <nav>
-      <ul class="nav">
-                <li><a href="index.html?v=6"><span data-i18n="nav_home">Home</span></a></li>
-        <li><a href="properties.html?v=6"><span data-i18n="nav_properties">Listings</span></a></li>
-        <li><a class="active" href="about.html?v=6"><span data-i18n="nav_about">About</span></a></li>
-        <li><a href="contact.html?v=6"><span data-i18n="nav_contact">Contact</span></a></li>
-      </ul>
-    </nav>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <header class="header">
+    <div class="hazard"></div>
+    <div class="header-in">
+      <a class="brand" href="index.html?v=7" aria-label="VitB Company"><svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="#2f343a" stroke="#ff6a1a" stroke-width="2.5"/><circle cx="20" cy="20" r="7" fill="#16181b" stroke="#e6e8ea" stroke-width="2.5"/></svg><span>VIT<b>B</b> COMPANY</span></a>
+      <div class="header-right">
+        <div class="lang-switch" role="group" aria-label="Language"><button type="button" class="lang-btn active" data-lang="en" title="English" aria-label="English" aria-pressed="true" onclick="return window.__setLang && window.__setLang('en')"><img src="assets/flags/en.svg" alt="EN" /></button><button type="button" class="lang-btn" data-lang="ro" title="Română" aria-label="Română" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ro')"><img src="assets/flags/ro.svg" alt="RO" /></button><button type="button" class="lang-btn" data-lang="de" title="Deutsch" aria-label="Deutsch" aria-pressed="false" onclick="return window.__setLang && window.__setLang('de')"><img src="assets/flags/de.svg" alt="DE" /></button><button type="button" class="lang-btn" data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false" onclick="return window.__setLang && window.__setLang('ru')"><img src="assets/flags/ru.svg" alt="RU" /></button></div>
+        <nav class="nav"><ul><li><a href="index.html?v=7"><span data-i18n="nav_home">Home</span></a></li><li><a href="services.html?v=7"><span data-i18n="nav_services">Services</span></a></li><li><a class="active" href="about.html?v=7"><span data-i18n="nav_about">About</span></a></li><li><a href="contact.html?v=7"><span data-i18n="nav_contact">Contact</span></a></li></ul></nav>
+      </div>
     </div>
   </header>
-
-  <main class="main content">
-    <h1 class="page-title" data-i18n="page_about">ABOUT</h1>
-    <div class="gold-line"></div>
-    <img class="crest" src="assets/logo-vitb.png" alt="VitB Company logo" />
-    <div class="blocks">
-      <div class="block">
-        <h3 data-i18n="about_heritage">LOCAL</h3>
-        <p data-i18n="about_heritage_body">We work where the city meets the sea — Constanța and Mamaia. Streets, buildings, and seasons we know first-hand, so every recommendation stays practical.</p>
-      </div>
-      <div class="divider-v"></div>
-      <div class="block">
-        <h3 data-i18n="about_exclusivity">SALE & RENT</h3>
-        <p data-i18n="about_exclusivity_body">Apartments, houses, and holiday homes: purchase, sale, and rental. Short stays or long-term living — we match the property to how you actually use it.</p>
-      </div>
-      <div class="divider-v"></div>
-      <div class="block">
-        <h3 data-i18n="about_discretion">CLEAR STEPS</h3>
-        <p data-i18n="about_discretion_body">From the first call to the keys: honest numbers, transparent documents, and guidance without pressure. You always know what comes next.</p>
-      </div>
-    </div>
-    <div class="gold-line" style="margin-top:36px"></div>
-    <p class="statement" data-i18n="about_quote">“A good home by the sea should feel simple — and right.”</p>
+  <main class="main">
+    <div class="eyebrow fade">VitB Company</div>
+    <h1 class="page-title fade d1" data-i18n="page_about">ABOUT</h1>
+    <p class="lead fade d2" data-i18n="about_intro">VitB Company is an industrial montage company working in Romania. Our approach is simple: do the job safely, precisely and on time.</p>
+    <div class="section" style="margin-top:44px"><div class="cards two"><article class="card fade d0"><div class="num">01</div><h3 data-i18n="a1_t">Safety</h3><p data-i18n="a1_b">Work is planned around safety rules, protective equipment and a safe workplace for everyone on site.</p></article><article class="card fade d1"><div class="num">02</div><h3 data-i18n="a2_t">Precision</h3><p data-i18n="a2_b">Measurements, alignment and quality checks at every stage of assembly.</p></article><article class="card fade d2"><div class="num">03</div><h3 data-i18n="a3_t">Deadlines</h3><p data-i18n="a3_b">A clear work plan agreed in advance and kept throughout the project.</p></article><article class="card fade d3"><div class="num">04</div><h3 data-i18n="a4_t">Own team & equipment</h3><p data-i18n="a4_b">We work with our own installation team and our own tools and equipment.</p></article></div></div>
+    <div class="quote reveal" data-i18n="about_quote">Built right. Built safe. Built on time.</div>
   </main>
-
-    <footer class="footer">
-    <span>© VitB Company</span>
-    <span data-i18n="footer_about">Local ◆ Sale & Rent ◆ Clear steps</span>
-    <span>Romania</span>
-  </footer>
+  <footer class="footer"><div class="footer-in"><span>© VitB Company</span><span data-i18n="footer_tag">Industrial montage ◆ Romania</span><span>Romania</span></div></footer>
 </div>
-  <script>
+<script>
   window.__setLang = function (lang) {
     try {
-      // Prefer full i18n module if loaded
       if (window.__vitbApply) { window.__vitbApply(lang); return false; }
       localStorage.setItem('vitbcompany-lang', lang);
       location.reload();
     } catch (e) { location.reload(); }
     return false;
   };
-  </script>
-  <script src="assets/i18n.js?v=6" defer></script>
+</script>
+<script src="assets/i18n.js?v=7" defer></script>
 </body>
 </html>
