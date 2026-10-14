@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VB ORGANISATION — About</title>
+<title>VITB COMPANY — About</title>
 <link rel="stylesheet" href="styles.css" />
 <style>
   .content {
@@ -106,8 +106,8 @@
 
     <header class="header">
     <div class="brand">
-      <img class="brand-logo" src="assets/logo-vb.png" alt="VB Organisation logo" />
-      <span class="brand-text">VB ORGANISATION</span>
+      <img class="brand-logo" src="assets/logo-vitb.png" alt="VitB Company logo" />
+      <span class="brand-text">VITB COMPANY</span>
     </div>
     <div class="header-right">
     <div class="lang-switch" role="group" aria-label="Language">
@@ -142,7 +142,7 @@
   <main class="main content">
     <h1 class="page-title" data-i18n="page_about">ABOUT</h1>
     <div class="gold-line"></div>
-    <img class="crest" src="assets/logo-vb.png" alt="VB Organisation logo" />
+    <img class="crest" src="assets/logo-vitb.png" alt="VitB Company logo" />
     <div class="blocks">
       <div class="block">
         <h3 data-i18n="about_heritage">LOCAL</h3>
@@ -164,7 +164,7 @@
   </main>
 
     <footer class="footer">
-    <span>© VB Organisation</span>
+    <span>© VitB Company</span>
     <span data-i18n="footer_about">Local ◆ Sale & Rent ◆ Clear steps</span>
     <span>Romania</span>
   </footer>
@@ -173,8 +173,8 @@
   window.__setLang = function (lang) {
     try {
       // Prefer full i18n module if loaded
-      if (window.__vborgApply) { window.__vborgApply(lang); return false; }
-      localStorage.setItem('vborganisation-lang', lang);
+      if (window.__vitbApply) { window.__vitbApply(lang); return false; }
+      localStorage.setItem('vitbcompany-lang', lang);
       location.reload();
     } catch (e) { location.reload(); }
     return false;

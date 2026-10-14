@@ -1,10 +1,10 @@
-# VB ORGANISATION
+# VITB COMPANY
 
 Luxury real estate website — black & metallic gold.
 
 ## Live site
 
-GitHub Pages: https://g7jdfn7dhj-creator.github.io/vborganisation/
+GitHub Pages: https://g7jdfn7dhj-creator.github.io/vitbcompany/
 
 (Custom domain can be added later.)
 
